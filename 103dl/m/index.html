@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome</title>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="./js/jroll-lite.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Microsoft YaHei", Arial, Verdana, SimSun, SimHei, STHeiti, Helvetica, sans-serif;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #830101;
+    }
+    @keyframes heart_beat {
+      0% {
+        transform: scale(.95)
+      }
+      50% {
+        transform: scale(1.05)
+      }
+      100% {
+        transform: scale(.95)
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+ li {
+   list-style: none;
+ }
+    #scroll {
+      width: 100%;
+      height: 100%;
+    }
+    .container {
+      position: relative;
+      width: 100vw;
+      background-color: #331200;
+      padding-bottom: 19vw;
+    }
+
+    .header {
+      width: 100vw;
+      height: 97.6vw;
+      background-image: url(./images/head.png);
+      background-size: 100% 100%;
+    }
+
+    .logo {
+      width: 100%;
+      height: 33.46vw;
+      margin-bottom: 4vw;
+      background-image: url(./images/logo.png);
+      background-size: 100% 100%;
+    }
+
+    .btnBox {
+      /*position: absolute;*/
+      /*top: 136.53vw;*/
+      width: 100%;
+      margin-bottom: 1.5vw;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .btnBox .left, .btnBox .right {
+      width: 45.26%;
+      animation: heart_beat .8s infinite linear;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      display: none;
+    }
+
+    .trustBtn {
+      margin-bottom: 6.26vw;
+    }
+
+    .main {
+      padding: 0 1.8vw;
+    }
+
+    .banner {
+      margin-bottom: 5.8vw;
+    }
+
+
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #FDE32A;
+      font-weight: 400;
+      font-size: 4vw;
+      padding-bottom: 1vw;
+      border-bottom: 4px solid #F9B200;
+      margin-bottom: 2.4vw;
+    }
+
+    .title .icon {
+      width: 3.73vw;
+      height: 6.13vw;
+      margin-right: 1vw;
+      display: inline-block;
+      background-image: url(./images/icon.png);
+      background-size: 100% 100%;
+    }
+    .desc {
+      font-size: 3vw;
+      color: #ffffff;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    .desc span {
+      color: #FFFC00;
+    }
+    .service {
+      position: relative;
+      top: -10px;
+      width: 100%;
+      height: 34.8vw;
+      background-image: url(./images/service.png);
+      background-size: 100% 100%;
+      margin-bottom: 4.4vw;
+    }
+    .service .title {
+      position: absolute;
+      bottom: -3.3vw;
+      left: 0;
+      width: 100%;
+    }
+    .games {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 4.8vw;
+
+    }
+    .games li {
+      width: 18.26vw;
+      height: 6.66vw;
+      line-height: 6.66vw;
+      text-align: center;
+      border-radius: 3.33vw;
+      margin-bottom: 2vw;
+      background-color: #ffffff;
+      color: #1C1C1C;
+      font-size: 3vw;
+      font-weight:400;
+    }
+    .games .game1 {
+      color: #ffffff;
+      background-color: #FE6112;
+    }
+    .games .game3 {
+      color: #ffffff;
+      background-color: #FF1218;
+    }
+    .games .game4 {
+      color: #1C1C1C;
+      background-color: #FFFC00;
+    }
+    .games .game5 {
+      color: #1C1C1C;
+      background-color: #BE6FCF;
+    }
+    .games .game6 {
+      color: #ffffff;
+      background-color: #1F69FF;
+    }
+    .discuss {
+      margin-top: 13.33vw;
+    }
+    .discuss .item {
+    margin: 3.7vw auto;
+      font-size: 3.2vw;
+  }
+    .discuss .item .top {
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family:PingFang SC;
+      font-weight:500;
+      margin-bottom: 2vw;
+    }
+    .discuss .item .top .top_left .star {
+      display: inline-block;
+      width: 3.2vw;
+      height: 3.06vw;
+      background-image: url(./images/star.png);
+      background-size: 100% 100%;
+    }
+
+    .discuss .item .top .top_left .name {
+      color: #EB6B26;
+    }
+    .discuss .item .txt {
+      font-weight:400;
+      font-size: 3.4vw;
+      line-height: 1.5;
+      color: #ffffff;
+      text-align: justify;
+    }
+    .app {
+      position: absolute;
+      top: 5.26vw;
+      width: 26vw;
+      height: 9.46vw;
+      background-size: 100% 100%;
+    }
+    .app.android {
+      right: 26.8vw;
+      background-image: url(./images/android2.png);
+    }
+
+    .app.ios {
+      right: 0.4vw;
+      background-image: url(./images/ios2.png);
+    }
+
+    .trustBox {
+      position: fixed;
+      overflow-y: auto;
+      width: 100%;
+      max-width: 750px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: none;
+      touch-action: pan-y;
+      transition: none;
+      overflow-y: auto;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+    }
+  </style>
+</head>
+<body>
+<div id="scroll">
+  <div class="container" id="container">
+    <div class="header"></div>
+    <div class="logo"></div>
+    <!-- <img src="./images/bg1.png" alt="">
+     <img src="./images/bg2.png" alt="">
+     <img src="./images/bg3.png" alt="">-->
+    <div class="btnBox">
+      <div class="left">
+        <a href="javascript:downApp();">
+          <img src="images/android1.png">
+        </a>
+      </div>
+      <div class="right">
+        <a href="javascript:downApp();">
+          <img src="images/ios1.png">
+        </a>
+      </div>
+    </div>
+    <div class="trustBtn">
+      <a href="javascript:showXR();">
+        <img src="images/trustBtn.png"/>
+      </a>
+    </div>
+    <div class="main">
+      <img class="banner" src="./images/banner1.png" alt="">
+      <img class="banner" src="./images/banner2.png" alt="">
+      <img class="banner" src="./images/banner3.png" alt="">
+      <img class="banner" src="./images/banner4.png" alt="">
+      <img class="banner" src="./images/banner5.png" alt="">
+      <div class="title">
+        <span class="icon"></span>公司介绍
+      </div>
+      <p class="desc">全球顶级竞技棋牌中心，<span>10年经典棋牌品牌</span>，2019游戏全新精心打造，<span>与亿万玩家一起玩《103棋牌》</span>103棋牌<span>唯一指定官网：103.com</span>;下载APP<span>注册即送103元</span>！拥有：最全的<span>棋牌游戏、捕鱼游戏、电子游戏、真人视讯</span>；支持支付宝、微信、银行卡充值！</p>
+      <div class="service">
+        <div class="title">
+          <span class="icon"></span>热门游戏
+        </div>
+      </div>
+      <ul class="games">
+        <li class="game1">抢庄牛牛</li>
+        <li class="game2">炸金花</li>
+        <li class="game1">德州扑克</li>
+        <li class="game2">通比牛牛</li>
+        <li class="game1">斗地主</li>
+        <li class="game2">三公</li>
+        <li class="game3">21点</li>
+        <li class="game4">二八杠</li>
+        <li class="game1">抢庄牌九</li>
+        <li class="game5">百家乐</li>
+        <li class="game6">财神捕鱼</li>
+        <li class="game4">二人麻将</li>
+        <li class="game6">龙王捕鱼</li>
+        <li class="game6">美人捕鱼</li>
+        <li class="game4">跑得快</li>
+        <li class="game2">奔驰宝马</li>
+        <li class="game2">六合彩</li>
+        <li class="game6">捕鱼游戏</li>
+        <li class="game3">电子游艺</li>
+        <li class="game2">真人视讯</li>
+      </ul>
+      <div class="title">
+        <span class="icon"></span>综合评分
+      </div>
+      <img src="./images/rate.png" alt="" class="rate">
+      <div class="discuss">
+        <p style="color:#FFF600;font-family:PingFang SC;font-weight:500;font-size: 4vw;">官方大平台，好玩！</p>
+        <div class="item">
+          <div class="top">
+            <div class="top_left"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star" style="margin-right: 1vw;"></span>评论人：
+              <span class="name">Tina</span>
+            </div>
+            <div class="top_right">2019-11-07</div>
+          </div>
+          <p class="txt">游戏功能很齐全，玩法也很多。超级好玩，棋牌、麻将、捕鱼、真人的，都玩了一下不错呢。还能一边玩一边赚钱。一开始以为不好玩，现在都有点丢不下手了。</p>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="top_left"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star" style="margin-right: 1vw;"></span>评论人：
+              <span class="name">晴天小雨</span>
+            </div>
+            <div class="top_right">2019-11-02</div>
+          </div>
+          <p class="txt">确实是一款相当好玩的游戏软件，画面挺精美的，嗯，玩的过程也很流畅，也不卡带。挺不错的，重点是时不时有很多领取金币的活动。</p>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="top_left"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star" style="margin-right: 1vw;"></span>评论人：
+              <span class="name">傲娇少爷</span>
+            </div>
+            <div class="top_right">2019-10-26</div>
+          </div>
+          <p class="txt">朋友推荐玩的，玩了一段时间。确实是很有意思。是一个综合游戏平台，很多小游戏。我注册了还送了我103元现金，哈哈。</p>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="top_left"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star" style="margin-right: 1vw;"></span>评论人：
+              <span class="name">影子</span>
+            </div>
+            <div class="top_right">2019-10-07</div>
+          </div>
+          <p class="txt">哈哈哈，炸金花赚钱就是快呀，玩法多，赚得多，在这赢不了少钱呢，出款还快。</p>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="top_left"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star" style="margin-right: 1vw;"></span>评论人：
+              <span class="name">青衣萧瑟</span>
+            </div>
+            <div class="top_right">2019-10-01</div>
+          </div>
+          <p class="txt">很久都没有玩的这么尽兴了，难得的一款超级棒的棋牌APP了，游戏很多，玩家也很多，不用等。信誉也很好，这次小赚了一笔。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom" id="bottom">
+    <img src="./images/bg_down.png" alt="">
+    <a href="javascript:downApp();" class="app android"></a>
+    <a href="javascript:downApp();" class="app ios"></a>
+  </div>
+</div>
+
+<div class="trustBox" style="background:#331200">
+  <a href="javascript:hideXR();" class="trustColse"><img class="trustImg" src="./images/close.png"/></a>
+  <img src="./images/jc.png">
+</div>
+<script>
+  var jroll = new JRoll('#scroll')
+  setTimeout(function () {
+    jroll.refresh()
+  },1000)
+  document.documentElement.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault()
+    }
+  }, false)
+
+  var lastTouchEnd = 0
+  document.documentElement.addEventListener('touchend', function (event) {
+    var now = Date.now()
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault()
+    }
+    lastTouchEnd = now
+  }, false)
+  document.addEventListener('gesturestart', function (event) {
+    event.preventDefault()
+  })
+
+/*  document.body.addEventListener('touchmove', function (e) {
+    e.preventDefault()
+  }, { passive: false })*/
+
+  function showXR () {
+    $('.trustBox').fadeIn()
+  }
+
+  function hideXR () {
+    $('.trustBox').hide()
+  }
+var container = document.getElementById('container');
+  document.body.addEventListener('touchmove', function (e) {
+    // console.log($('#container').offset().top)
+    // console.log(-window.screen.height)
+    if ($('#container').offset().top <= -window.screen.height ) {
+      document.querySelector('#bottom').style.display = 'block'
+    } else {
+      document.querySelector('#bottom').style.display = 'none'
+    }
+  }, { passive: false })
+ /* document.onscroll = function () {
+    console.log($('#container').offset().top)
+    if (container.scrollTop >= window.screen.height ) {
+      document.querySelector('#bottom').style.display = 'block'
+    } else {
+      document.querySelector('#bottom').style.display = 'none'
+    }
+  }*/
+  /*document.onscroll = function () {
+    if (document.documentElement.scrollTop >= window.screen.height || document.body.scrollTop >= window.screen.height) {
+      document.querySelector('#bottom').style.display = 'block'
+    } else {
+      document.querySelector('#bottom').style.display = 'none'
+    }
+  }*/
+</script>
+<script type="text/javascript" src="https://res.cdn.openinstall.io/openinstall.js"></script>
+<script type="text/javascript">
+  //openinstall初始化时将与openinstall服务器交互，应尽可能早的调用
+  /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
+  var data = OpenInstall.parseUrlParams()//openinstall.js中提供的工具函数，解析url中的所有查询参数
+  var openInstall = new OpenInstall({
+    /*appKey必选参数，openinstall平台为每个应用分配的ID*/
+    appKey: 'ee05o5',
+    apkFileName: '103qp.apk',
+    onready: function () {
+      var m = this
+      m.schemeWakeup()
+    }
+  }, data)
+
+  function downApp (type) {
+    openInstall.wakeupOrInstall()
+  }
+</script>
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

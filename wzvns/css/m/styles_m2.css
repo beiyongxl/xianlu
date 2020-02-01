@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; border:0;}
+a{ text-decoration:none; display:inline-block;}
+html{ font-size:20px;}
+body{max-width:640px; margin:auto; background:#131210;}
+h1,h2,h3,h4,h5.h6{font:bold 0.7rem/0.7rem '';}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+select{-webkit-appearance:none; background: none;}
+a{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.clear{ clear: both;}
+
+.top{ background:url(../images/top_bg.jpg) top center no-repeat #1a1917; background-size:100%; border-bottom:1px solid #2a251f; }
+.top .logo{ width:8rem; height:1.8rem;margin:0.5rem 0.5rem; float: left;}
+.top .logo img{ }
+.top .tel{ height:1.8rem; display: block; float: right;text-align: right; margin:0.5rem;}
+.top .tel img{ width:7rem; display: inline-block;}
+h1{ margin:0.8rem auto 1rem auto;width: 64%; }
+.list_bg{ width: 96%; margin:0 auto 1rem auto; background: url(../../images/list_bg.png) top left repeat-x;   padding: 0.3rem 0;  }
+.ul_01{ width: 94%;margin:0 auto 1rem auto; border:1px solid #313131;border-right:none;}
+.ul_01  li{ width: 33.3%;float: left; background: #212121;}
+.ul_01  li a{ display: block;  border-right:1px solid #313131; padding: 1rem 0;}
+.ul_01  li a p{ text-align: center; font:0.75rem/1.2rem ''; color:#fff;}
+.ul_01  li a span{ display: block; text-align: center; color:#d50202 ; font:0.6rem/1.2rem '微软雅黑';}
+
+.ul_02{ width: 94%;margin:0 auto 0.5rem auto; }
+.ul_02 li{ float: left; width: 33.33%;}
+.ul_02 li.list_01{ background:#cb1515 ;}
+.ul_02 li.list_02{ background:#dd7200 ;}
+.ul_02 li.list_03{ background:#478f01 ;}
+.ul_02 li a{ border-right:2px solid #2f1f29; display: block; padding:0.7rem 0; }
+.ul_02 li.list_03 a{ border:none;} 
+.ul_02 li a img{ width: 1.5rem; display: block; margin: auto;}
+.ul_02 li a p{ text-align: center; color: #fff; font:0.6rem/1rem '微软雅黑';}
+.ul_02 li.list_04{ background:#007a7e ;}
+.ul_02 li.list_05{ background:#00379b ;}
+.ul_02 li.list_06{ background:#5c00b1 ;}
+
+.big_logo{ background: #1b1b1b;width: 94%;margin:0 auto 0 auto;text-align: center; padding: 1rem 0; }
+.big_logo img{ display: inline-block; }
+
+.footer{ font:0.7rem/2.5rem '微软雅黑'; color:#ffee9e;text-align: center;}
+
+/*footer*/
+@media screen and (min-width:380px){
+html{ font-size:21px;}
+}
+
+@media screen and (min-width:400px){
+html{ font-size:22px;}
+}
+
+@media screen and (min-width:640px){
+html{ font-size:30px;}
+
+}
+
+@media screen and (max-width:340px){
+html{ font-size:18px;}
+}
+
+

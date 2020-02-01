@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta content="" name="Keywords">
+    <meta name="description" content="请点击打开网址免费注册"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <style type='text/css'>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font: 14px Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+            color: #000;
+            text-align: left;
+        }
+
+        a:link, a:visited {
+            color: #66C2FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #F00;
+            text-decoration: underline;
+        }
+
+        img {
+            border: 0 none;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+<div style="max-width:320px; min-width:320px; margin:auto; ">
+    <div align="center" style="margin-top:20px;">
+       <img id="register" src="images/zhuce.jpg" width="300">
+       <img id="login" src="images/deng.jpg" width="300">
+        <a href="https://gzz833.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=918065&configID=41386&jid=7848409807&s=1"
+           target="_blank"><img src="images/kefu.png" width="300"></a>
+    </div>
+    <p align="center" style="margin-bottom:10px; margin-top:30px;"></p>
+</div>
+
+<script>
+    function F_encode(text, key) {
+        num_out = "";
+        str_in = escape(text);
+        for (i = 0; i < str_in.length; i++) {
+            num_out += str_in.charCodeAt(i) - key;
+        }
+        return num_out;
+    }
+
+    function F_decode(num, key) {
+        text_out = "";
+        for (i = 0; i < num.length; i+=2) {
+            var cha = num.substr(i, 2);
+            text_out += unescape(String.fromCharCode(parseInt(num.substr(i, 2)) + key));
+        }
+        return text_out;
+    }
+    function is_mobileQQ() {
+        var ua = navigator.userAgent.toLowerCase();
+
+        if (ua.indexOf('qq') !== -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function is_weixin() {
+
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let link1 = document.querySelector('#register');
+    let link2 = document.querySelector('#login');
+    let link1Array = new Array(
+        "93932823237221748684228976788090917689",
+        "93932823237321748684228976788090917689",
+        "93932823237421748684228976788090917689",
+        "93932823237521748684228976788090917689",
+        "93932823237621748684228976788090917689",
+        "93932823237721748684228976788090917689",
+        "93932823237821748684228976788090917689",
+        "93932823237921748684228976788090917689",
+        "93932823238021748684228976788090917689",
+        "93932823238121748684228976788090917689"
+    );
+    link1.onclick=function(){
+          if (is_weixin() == true || is_mobileQQ() == true){
+            window.location.href = F_decode('212294952294952179918483', 25);
+        }else{
+              let i = Math.floor(Math.random()*10);
+              window.location.href = 'http://' + F_decode(link1Array[i], 25);
+              //window.location.href = 'http://' + F_decode('9494942193932823237221748684228976788090917689', 25);
+        }
+    }
+    let link2Array = new Array(
+        "9393282323727221748684228386788085",
+        "9393282323737321748684228386788085",
+        "9393282323747421748684228386788085",
+        "9393282323757521748684228386788085",
+        "9393282323767621748684228386788085",
+        "9393282323777721748684228386788085",
+        "9393282323787821748684228386788085",
+        "9393282323797921748684228386788085",
+        "9393282323808021748684228386788085",
+        "9393282323818121748684228386788085"
+    );
+    link2.onclick=function(){
+         if (is_weixin() == true || is_mobileQQ() == true){
+            window.location.href = F_decode('212294952294952179918483', 25);
+        }else{
+             let i = Math.floor(Math.random()*10);
+             window.location.href = 'http://' + F_decode(link2Array[i], 25);
+             //window.location.href = 'http://' + F_decode('9494942193932823237221748684228386788085', 25);
+        }
+    }
+</script>
+</body>
+</html>

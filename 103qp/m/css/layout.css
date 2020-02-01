@@ -1,0 +1,45 @@
+#app{max-width:640px;margin:0 auto;z-index:2;min-height:100%;background:#2d1a0c}
+#app .download_zone{position:relative}
+#app .download_zone .buttons{position:absolute;width:100%;height:100%;display:flex;left:0;top:0}
+#app .download_zone .buttons a{width:100%;overflow:hidden;text-indent:-999em;font-size:0;cursor:pointer}
+#window{width:100vw;height:100vh;position:fixed;z-index:999;left:0;top:0;max-height:0;overflow:hidden}
+#window .bg{width:100vw;height:100vh;position:relative;background:#000;opacity:0;transition:all .6s}
+#window .box{position:absolute;width:100vw;height:100vh;left:0;top:40px;opacity:0;transition:all .6s}
+#window .content{max-width:640px;height:100vh;margin:0 auto;display:flex;flex-direction:column;justify-content:center}
+#window .img_box{margin:0 auto;position:relative}
+#window .xr_button{height:30vw;position:absolute;left:0;bottom:0;display:block;width:100%}
+#window.show{max-height:100vh}
+#window.show .bg{opacity:.6}
+#window.show .box{opacity:1;top:0}
+
+#app #xr_back{display:block;width:20vw;height:100%;position:absolute;display:block;left:0;top:0}
+#app .top{position:relative}
+#trust{position:absolute;left:0;width:100vw;display:none;background:rgba(0,0,0,.6);z-index:11111}
+#app .slider{position:relative}
+#app #slider{position:absolute;left:0;top:0;z-index:9999;width:100vw}
+#certify{position:relative;width:100%;margin:0 auto}
+#certify .swiper-slide{width:170px;text-align:center}
+#certify .swiper-slide img{display:block;margin:0 auto}
+#cs{position:fixed;right:10px;bottom:15%;display:block;cursor:pointer;width:24vw;z-index:11111}
+#app .slider.contentBanner{position:absolute;bottom:0vw;left:5%;width:91%}
+#app .download_zone .bg{display: flex;padding: 10px 0}
+#app .download_zone .bg a{padding: 10px;animation:toggleSize .4s infinite}
+#app .download_zone .bg a:last-child {animation-delay: .2s}
+#app .download_zone.and_show .bg a{width:20rem;margin: 0 auto;;padding-bottom: 0}
+#app .download_zone.ios_show .bg a{width:20rem;margin: 0 auto;;padding-bottom: 0}
+
+#app .cesu {padding-top: 10px;background: linear-gradient(to bottom,#2D1A0C,#1A100F);padding-bottom: 20px}
+#app .cesu .list{margin:0 2vw;padding-top:10px}
+#app .cesu .list dl{display:flex;justify-content:space-between;padding:6px 0}
+#app .cesu .list dl dt{background:#a70503;color:#fff;font-size:14px;height:30px;line-height:30px;width:18vw;text-align:center;flex-shrink:0;border:red 1px solid;border-right:none}
+#app .cesu .list dl dd{flex-grow:1}
+#app .cesu .list dl dd.btns{flex-grow:0;flex-shrink:0;width:22vw;padding-left:14px}
+#app .cesu .list dl dd.btns button{height:30px;line-height:30px;display:block;width:100%;background:red;border-radius:6px;color:#fff;border-bottom:#a70503 3px solid}
+#app .cesu .list dl dt+dd{background:#e8e8e8;line-height:30px;position:relative}
+#app .cesu .list dl dt+dd cite{position:absolute;left:0;top:0;font-size:10px;background:#d6d6d6;color:#666;height:14px;line-height:14px;font-style:normal;padding:0 4px}
+#app .cesu .list dl dt+dd span{display:block;padding-left:40px;font-size:14px}
+#app .cesu .list dl dt+dd span b{color:red;font-weight:400}
+#xrBox{display: none;opacity:0;position:fixed;left:0;top:0;width:100%;height:100vh;overflow-y:auto;z-index:-9999;transition:none;touch-action:pan-y;}
+#xrBox.show{z-index:9999999;visibility:visible;opacity:1;transition:all 1.3s;}
+#xrBox .close{width:100%;height:14vw;left:0;top:0;cursor:pointer;position:absolute}
+#xrBox .install{width:100%;height:24vw;left:0;bottom:0;cursor:pointer;position:fixed}

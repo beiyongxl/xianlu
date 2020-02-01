@@ -1,0 +1,322 @@
+body {
+	background: #18181B;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	color: #fff;
+}
+img {
+	width: 100%;
+}
+.header {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 0 0.2rem 0.2rem;
+	box-sizing: border-box;
+	position: relative;
+	border-top: 1px solid #2E2E32;
+	background-color: #18181B;
+}
+.header .logo {
+	width: 3.4rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1.7rem;
+}
+.header .hImg {
+	margin-top: 0.4rem;
+	float: left;
+	width: 3rem;
+}
+.header .hService {
+	float: right;
+	width: 2.9rem;
+	margin-top: 0.2rem;
+}
+#main {
+	background-color: #202023;
+	padding: 0.4rem 0.18rem;
+}
+.tabUl {
+	margin-bottom: 0.15rem;
+}
+.tabUl li {
+	width: 24.25%;
+	float: left;
+	margin-right: 1%;
+  cursor: pointer;
+}
+.tabUl li:last-child {
+	margin-right: 0;
+}
+.tabUl li a {
+	display: block;
+	text-align: center;
+	background-color: #28282B;
+	border: 1px solid #505050;
+	border-radius: 3px;
+	padding: 0.3rem 0.2rem 0.2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.tabUl li.on a:before {
+	content:"";
+	position: absolute;
+	bottom: -0.19rem;
+	left: 1.1rem;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../images/icon01.png) no-repeat center top;
+	background-size: 0.2rem auto;
+}
+.tabUl li span {
+	display: block;
+	font-size: 0.4rem;
+	padding-top: 0.65rem;
+}
+.tabUl li.on a {
+	border: 1px solid #A1925B;
+	background-color: #A1925B;
+	color: #37321c;
+}
+.tabUl .li01 a span {
+	background: url(../images/img01.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li01.on a span {
+	background: url(../images/img01_over.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li02 a span {
+	background: url(../images/img02.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li02.on a span {
+	background: url(../images/img02_over.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li03 a span {
+	background: url(../images/img03.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li03.on a span {
+	background: url(../images/img03_over.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li04 a span {
+	background: url(../images/img04.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.tabUl .li04.on a span{
+	background: url(../images/img04_over.png) no-repeat center top;
+	background-size: 0.8rem auto;
+}
+.speedlist li {
+	 *zoom:1;
+	 margin-bottom:.45rem;
+	overflow: hidden;
+	zoom: 1;
+}
+.speedlist li .icon01 {
+	margin: 0.2rem 0.2rem 0 0;
+	width: 0.3rem;
+	float: left;
+}
+.speedlist li .icon02 {
+	margin: 0.2rem 0.2rem 0 0;
+	width: 0.7rem;
+	float: left;
+}
+.speedlist .ms {
+	float: left;
+	font-size:.37rem;
+	height:.7rem;
+	line-height:.7rem;
+	width: 1.6rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius:.11rem;
+	background: #1d1d1d;
+	border: solid 1px #505050;
+	margin-right:.2rem;
+	color: #00fe36;
+}
+.speedlist .url {
+	margin-right: 0.1rem;
+	width:3.2rem;
+	float: left;
+	display: block;
+	font-size:.40rem;
+	height:.7rem;
+	line-height:.7rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius:.11rem;
+	background: #1d1d1d;
+	border: solid 1px #505050;
+	color: #938656;
+	text-align: left;
+	padding-left: .3rem
+}
+.speedlist .btn-open {
+	width: 2rem;
+	line-height: 1;
+	float: left;
+	font-size:.35rem;
+	height:.7rem;
+	line-height:.7rem;
+	display: block;
+	text-align: center;
+}
+.speedlist .btn-open a {
+	background: url(../images/btn.png) no-repeat center top;
+	background-size: 2rem auto;
+	display: block;
+	color: #fff;
+}
+/*.speedlist .btn-open a:hover {
+	background: url(../images/btn_over.png) no-repeat center top;
+	background-size: 2rem auto;
+	color: #fff;
+}*/
+.tabBox {
+	margin-bottom: 0.2rem;
+	background-color: #28282B;
+	border: 1px solid #505050;
+	border-radius: 5px;
+	padding: 0.5rem 0.2rem 0.2rem 0.4rem;
+}
+.ulLink li {
+	width: 2.28rem;
+	margin-right:0.15rem;
+	float: left;
+}
+.ulLink li a {
+	display: block;
+	background-color: #282828;
+	border: 1px solid #666;
+	border-radius: 3px;
+	padding: 0.2rem 0.1rem;
+	text-align: center;
+}
+.ulLink li:last-child {
+	margin-right: 0;
+}
+.ulLink li img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.06rem;
+	width: 0.4rem;
+}
+.ulLink li span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.35rem;
+}
+/*.ulLink li a:hover {
+	background-color: #ffd053;
+}*/
+.gameUl li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.gameUl li a {
+	position: relative;
+	padding: 0.5rem 0 0.3rem;
+	display: block;
+	border-right: 1px solid #505050;
+	border-bottom: 1px solid #505050;
+}
+.gameUl li:nth-child(3n) a {
+	border-right: none;
+}
+.gameUl li a img {
+	width: auto;
+	height: 1rem;
+}
+.gameUl li span {
+	margin-top: 0.1rem;
+	color: #ccc;
+	display: block;
+}
+
+.gameUl li.hot a:after {
+	content: '';
+	position: absolute;
+	 top: 3px;
+	 right: 23px;
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: url(../images/hot.gif) no-repeat center top;
+}
+.gameUl li.tui a:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	right: 23px;
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: url(../images/tui.gif) no-repeat center top;
+}
+
+
+/*.gameUl li a:hover span {
+	color: #fdf353;
+}*/
+.tabBox02,
+.tabBox03 {
+	padding: 0;
+}
+.tabBox04 {
+	padding: 1.4rem 1rem;
+}
+.tabBox04 .title {
+	width: 4rem;
+	margin: 0 auto 0.7rem;
+}
+.tabBox04 .text {
+	width: 3.8rem;
+	margin: 0 auto 0.5rem;
+}
+.tabBox04 .downUl li {
+	float: left;
+	width: 2.85rem;
+	margin: 0 0.45rem;
+	text-align: center;
+}
+.tabBox04 .downUl li p {
+	margin-top: 0.1rem;
+	color: #ccc;
+	font-size: 0.35rem;
+}
+.tabBox04 .downUl span {
+	padding-left: 0.45rem;
+}
+.tabBox04 .downUl .li01 span {
+	background: url(../images/icon04.png) no-repeat left center;
+	background-size: 0.35rem auto;
+}
+.tabBox04 .downUl .li02 span {
+	background: url(../images/icon05.png) no-repeat left center;
+	background-size: 0.35rem auto;
+}
+
+#footer {
+	padding: 0.3rem 0 0.3rem;
+}
+#footer p {
+	text-align: center;
+	color: #666666;
+	font-size: 0.35rem;
+}

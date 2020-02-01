@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no"
+    name="viewport" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#4c516a" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="icon" href="data:image/ico;">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/jquery-confirm.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <!--  <link rel="preconnect" href="https://openinstall.io" crossorigin="use-credentials"/>-->
+  <script type="text/javascript">
+    var url = ''
+    // var android_url = 'http://3000016.com/download/kyqp/kyqp.apk'
+    // var ios_url = 'itms-services:///?action=download-manifest&amp;url=https://raw.githubusercontent.com/buttCar/kjzb1/master/kyqp.plist'
+    var ua = window.navigator.userAgent.toLowerCase()
+
+    function isIOS() {
+      return /iphone/.test(ua) || /ipad/.test(ua)
+    }
+
+    function showXR() {
+      if (!isIOS) {
+        $('#xrBox').hide()
+      }
+    }
+  </script>
+  <style>
+    .selfAlert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background-color: rgba(0, 0, 0, .8);
+      padding: 10px 20px;
+      z-index: 9999;
+      font-size: 20px;
+      border-radius: 4px;
+      display: none;
+    }
+
+    video {
+      z-index: -999;
+      object-fit: fill;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="top">
+      <img src="./images/top.jpg" alt="">
+    </div>
+    <div class="btn">
+      <a href="javascript:void (0);" onclick="downApp()"><img src="images/downBtn.gif"></a>
+    </div>
+    <div class="cesu">
+      <div class="title hide ios_show" id="mxr"><a href="javascript:showXR()"><img src="./images/title_ios.jpg"
+            alt=""></a>
+      </div>
+      <div class="title hide and_show"><img src="./images/title_and.jpg" alt=""></div>
+      <div class="list">
+        <dl>
+          <dt>站点一</dt>
+          <dd><cite id="time1">-ms</cite><span>https://<b id="web1">k9932.com</b></span></dd>
+          <dd class="btns btn1" data-url="https://k9932.com">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>站点二</dt>
+          <dd><cite id="time2">-ms</cite><span>https://<b id="web2">k9940.com</b></span></dd>
+          <dd class="btns btn2" data-url="https://k9940.com">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>站点三</dt>
+          <dd><cite id="time3">-ms</cite><span>https://<b id="web3">k9941.com</b></span></dd>
+          <dd class="btns btn3" data-url="https://k9941.com">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <img src="./images/mp4-top-img.png" style="width: 100%;background-color: #000;">
+    <div style="background-color: #000;font-size: 0;">
+      <video width="100%" controls autoplay playsinline webkit-playsinline poster="./images/mp4-bg.png">
+        <source src="./mp4/wb.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="slider">
+      <img src="./images/slider.jpg" style="min-height: 300px;" alt="">
+      <div id="slider">
+        <div id="certify">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/slider1.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider2.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider3.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider4.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider5.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider6.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider7.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider8.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider9.png" /></div>
+              <div class="swiper-slide"><img src="./images/slider10.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <img src="./images/ct1.jpg" alt="">
+      <div class="ct2">
+        <img src="./images/ct2.jpg" alt="">
+        <div class="slider contentBanner">
+          <div id="slider2">
+            <div id="certify2">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./images/banner1.png" /></div>
+                  <div class="swiper-slide"><img src="./images/banner2.png" /></div>
+                  <div class="swiper-slide"><img src="./images/banner3.png" /></div>
+                  <div class="swiper-slide"><img src="./images/banner4.png" /></div>
+                  <div class="swiper-slide"><img src="./images/banner5.png" /></div>
+                  <div class="swiper-slide"><img src="./images/banner6.png" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./images/ct3.jpg" alt="">
+    </div>
+    <div class="hidden">
+      <img src="./images/jc_close.jpg" alt="">
+      <img src="./images/jc.png" alt="">
+      <img src="./images/jc_xr.jpg" alt="">
+      <iframe src="" id="download_if" frameborder="0"></iframe>
+    </div>
+    <a href="" id="cs"><img src="images/cs.png" alt="" usemap="#Map">
+      <map name="Map">
+        <area shape="rect" coords="-17,-21,129,197"
+          href="https://flybar.sodla.com/chat/chatClient/chatbox.jsp?companyID=365044530&configID=203&jid=8519722249&s=1"
+          target="_blank">
+      </map>
+    </a>
+    <div id="xrBox" style="background: #000000;">
+      <div>
+        <div onclick="hideXrBox()">
+          <img src="./images/jc_close.jpg" alt="">
+        </div>
+        <img src="./images/jc.png" alt="">
+        <a href="./kyqp.mobileprovision"><img src="./images/jc_xr.jpg" alt=""></a>
+      </div>
+    </div>
+    <div class="selfAlert">
+      请手动播放视频
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-confirm.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://res.cdn.openinstall.io/openinstall.js"></script>
+    <script type="text/javascript">
+      //openinstall初始化时将与openinstall服务器交互，应尽可能早的调用
+      /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
+      var data = OpenInstall.parseUrlParams()//openinstall.js中提供的工具函数，解析url中的所有查询参数
+      var openInstall = new OpenInstall({
+        /*appKey必选参数，openinstall平台为每个应用分配的ID*/
+        appKey: 'ee05o5',
+        // preferWakeup: true,
+        apkFileName: '103qp.apk',
+        onready: function () {
+          var m = this
+          // m.schemeWakeup()
+        }
+      }, data)
+
+      function downApp(type) {
+        openInstall.wakeupOrInstall()
+      }
+    </script>
+    <script src="./js/script.js?ver=0.01"></script>
+    <script>
+      var arr1 = ['qp103a.com', 'qp103b.com', 'qp103c.com'];
+      var arr2 = ['qp103d.com', 'qp103e.com', 'qp103f.com'];
+      var arr3 = ['qp103g.com', 'qp103h.com', 'qp103i.com'];
+      var web1 = arr1[Math.floor(Math.random() * arr1.length)];
+      var web2 = arr2[Math.floor(Math.random() * arr2.length)];
+      var web3 = arr3[Math.floor(Math.random() * arr3.length)];
+      $('#web1').text(web1)
+      $('#web2').text(web2)
+      $('#web3').text(web3)
+      $('.btn1').attr('data-url', 'http://' + web1)
+      $('.btn2').attr('data-url', 'http://' + web2)
+      $('.btn3').attr('data-url', 'http://' + web3)
+      $('.btns').click(function () {
+        var $this = $(this)
+        /* if (datas.shareName && datas.shareName != '') {
+           window.open($this.attr('data-url') + '/#/shareName=' + datas.shareName)
+         } else {*/
+        window.open($this.attr('data-url'))
+        /* }*/
+      })
+
+    </script>
+    <script>
+      var oButton = document.getElementById('mxr') //假设HTML中按钮id="button"，并取得。
+      var oDiv = document.getElementById('xrBox') //假设HTML中div的id="div"，并取得。
+      oButton.onclick = function () {
+        if (oDiv.style.display == 'none') {
+          oDiv.style.display = 'block'
+        } else {
+          oDiv.style.display = 'none'
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>

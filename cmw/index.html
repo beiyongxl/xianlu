@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>欢迎光临-彩民网</title>
+    <meta name="description" content="83444">
+    <meta name="author" content="83444">
+    <meta name="keyword" content="83444">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="css/base.css" rel="stylesheet">
+    <script>
+        // 检查浏览器版本
+        var browser={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language:(navigator.browserLanguage || navigator.language).toLowerCase()
+        };
+        if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||
+            browser.versions.iPhone || browser.versions.iPad){
+            window.equipment='mobile';
+        }
+
+        // 检查操作系统
+        var os = function() {
+            var ua = navigator.userAgent,
+                isWindowsPhone = /(?:Windows Phone)/.test(ua),
+                isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+                isAndroid = /(?:Android)/.test(ua),
+                isFireFox = /(?:Firefox)/.test(ua),
+                isChrome = /(?:Chrome|CriOS)/.test(ua),
+                isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+                isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+                isPc = !isPhone && !isAndroid && !isSymbian;
+            return {
+                isTablet: isTablet,
+                isPhone: isPhone,
+                isAndroid : isAndroid,
+                isPc : isPc
+            };
+        }();
+        if(os.isTablet || os.isAndroid || os.isPhone) {
+            window.equipment = 'mobile';
+        }
+
+        // 检查手机型号
+        if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/MIDP|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE|HTC|SGH|SHARP|PANASONIC|BLACKBERRY|MEIZU|NETFRONT|UCWEB|WINDOWSCE|PALM|OPERAMINI|OPERAMOBI|OPENWAVE|NEXUSONE|CLDC|WAP/.test(navigator.userAgent))){
+            window.equipment = 'mobile';
+        }
+        if(window.equipment=='mobile') window.location.href='m/index.html';
+    </script>
+</head>
+
+<body style="">
+
+<div class="top">
+    <div class="w_1020">
+        <p class="logo">
+            <a class="href_url_nav" href="">
+                <img src="images/logo.png">
+            </a>
+        </p>
+        <p class="online">
+            <a class="href_url_online" href="https://ds-pce.saazoo.com/chat/chatClient/chatbox.jsp?companyID=365044368&configID=240&jid=1143264634&s=1" target="_blank"></a>
+        </p>
+    </div>
+</div>
+<div class="main" style="background-size: 100% 497px;">
+    <div class="w_1020">
+        <div class="main1">
+            <!--<h5>温馨提示：ms数值越小的网址，打开速度就越快</h5>-->
+            <!--<ul class="m1_list">-->
+                <!--<a href="javascript:;" class="ico_again"></a>-->
+                <!--<li class="bg1">-->
+                    <!--<span class="time" id="lineMs1">检测中</span>-->
+                    <!--<span class="link data_href_url1" data-href=""></span>-->
+                    <!--<a href="" class="btn href_url1" target="_blank">直接打开</a>-->
+                <!--</li>-->
+                <!--<li class="bg2">-->
+                    <!--<span class="time" id="lineMs2">检测中</span>-->
+                    <!--<span class="link data_href_url2" data-href="" style="top: 45px;"></span>-->
+                    <!--<a href="" class="btn href_url2" target="_blank" style="top: 100%;">直接打开</a>-->
+                <!--</li>-->
+                <!--<li class="bg1">-->
+                    <!--<span class="time" id="lineMs3">检测中</span>-->
+                    <!--<span class="link data_href_url3" data-href="" style="top: 45px;"></span>-->
+                    <!--<a href="" class="btn href_url3" target="_blank" style="top: 100%;">直接打开</a>-->
+                <!--</li>-->
+                <!--<li class="bg2">-->
+                    <!--<span class="time" id="lineMs4">检测中</span>-->
+                    <!--<span class="link data_href_url4" data-href="" style="top: 45px;"></span>-->
+                    <!--<a href="" class="btn href_url4" target="_blank" style="top: 100%;">直接打开</a>-->
+                <!--</li>-->
+                <!--<li class="bg1">-->
+                    <!--<span class="time" id="lineMs5">检测中</span>-->
+                    <!--<span class="link data_href_url5" data-href="" style="top: 45px;"></span>-->
+                    <!--<a href="" class="btn href_url5" target="_blank" style="top: 100%;">直接打开</a>-->
+                <!--</li>-->
+                <!--<li class="bg2">-->
+                    <!--<span class="time" id="lineMs6">检测中</span>-->
+                    <!--<span class="link data_href_url6" data-href="" style="top: 45px;"></span>-->
+                    <!--<a href="" class="btn href_url6" target="_blank" style="top: 100%;">直接打开</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+        <div class="main2">
+            <!--<div class="&lt;!&ndash;m2_left&ndash;&gt;">-->
+                <h5>快速导航</h5>
+                <ul>
+                    <li>
+                        <a target="_blank" class="href_url_login1" href="https://www.000cmw.com">
+                            <img src="images/ico2.png" class="i1" style="display: block;">
+                            <img src="images/ico2x.png" class="i2" style="display: none;">
+                            快速线路一
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="href_url_login2" href="https://www.111cmw.com">
+                            <img src="images/ico2.png" class="i1" style="display: block;">
+                            <img src="images/ico2x.png" class="i2" style="display: none;">
+                            快速线路二
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="href_url_login3" href="https://www.222cmw.com">
+                            <img src="images/ico2.png" class="i1" style="display: block;">
+                            <img src="images/ico2x.png" class="i2" style="display: none;">
+                            快速线路三
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="href_url_register" href="https://www.333cmw.com">
+                            <img src="images/ico3.png" class="i1" style="display: block;">
+                            <img src="images/ico3x.png" class="i2" style="display: none;">
+                            备用线路一
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="href_url_hot" href="https://www.555cmw.com">
+                            <img src="images/ico3.png" class="i1" style="display: block;">
+                            <img src="images/ico3x.png" class="i2" style="display: none;">
+                            备用线路二
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="href_url_online" href="https://www.666cmw.com">
+                            <img src="images/ico3.png" class="i1" style="display: block;">
+                            <img src="images/ico3x.png" class="i2" style="display: none;">
+                            备用线路三
+                        </a>
+                    </li>
+                    <li><a target="_blank" href="http://000cmw.com/caiMingWangLoginWeb/app/joinNow?ref=0e02b0"><img src="images/ico4.png">免费开户</a></li>
+                    <li><a target="_blank" href="http://000cmw.com/caiMingWangLoginWeb/app/promotion"><img src="images/ico5.png">优惠活动</a></li>
+                    <li><a target="_blank" href="https://ds-pce.saazoo.com/chat/chatClient/chatbox.jsp?companyID=365044368&configID=240&jid=1143264634&s=1"><img src="images/ico6.png">在线客服</a></li>
+                    <li><a target="_blank" href="https://hao.360.cn/"><img src="images/ico8.png">360浏览器</a></li>
+                    <li><a target="_blank" href="http://www.baidu.com/"><img src="images/ico12.png">百度浏览器</a></li>
+                    <li><a target="_blank" href="https://www.sogou.com/"><img src="images/ico14.png">搜狗浏览器</a></li>
+                </ul>
+            <!--</div>-->
+            <!--<div class="&lt;!&ndash;m2_right&ndash;&gt;">-->
+                <!--<h5>推荐浏览器</h5>-->
+                <!--<ul>-->
+                    <!--<li><a target="_blank" href="http://ub.xf0371.com/ub/cur/UB-Launcher.exe"><img src="images/ico15.png">环宇浏览器</a></li>-->
+                    <!--<li><a target="_blank" href="http://www.maxthon.cn/mx5/"><img src="images/ico10.png">遨游浏览器</a></li>-->
+                    <!--<li><a target="_blank" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html"><img src="images/ico11.png">谷歌浏览器</a></li>-->
+                    <!--<li><a target="_blank" href="http://liulanqi.baidu.com/"><img src="images/ico12.png">百度浏览器</a></li>-->
+                    <!--<li><a target="_blank" href="http://www.firefox.com.cn/"><img src="images/ico13.png">火狐浏览器</a></li>-->
+                    <!--<li><a target="_blank" href="http://ie.sogou.com/"><img src="images/ico14.png">搜狗浏览器</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="footer1"></div>
+<div class="footer2">COPYRIGHT © 彩民网 版权所有 RESERVED</div>
+
+
+<!--<script>-->
+    <!--$('.href_url1').attr('href', url1);-->
+    <!--$('.href_url2').attr('href', url2);-->
+    <!--$('.href_url3').attr('href', url3);-->
+    <!--$('.href_url4').attr('href', url4);-->
+    <!--$('.href_url5').attr('href', url5);-->
+    <!--$('.href_url6').attr('href', url6);-->
+
+    <!--$('.href_url_nav').attr('href', url_nav);-->
+    <!--$('.href_url_online').attr('href', url_online);-->
+
+    <!--$('.data_href_url1').attr('data-href', url1).html(url1.substring(7));-->
+    <!--$('.data_href_url2').attr('data-href', url2).html(url2.substring(7));-->
+    <!--$('.data_href_url3').attr('data-href', url3).html(url3.substring(7));-->
+    <!--$('.data_href_url4').attr('data-href', url4).html(url4.substring(7));-->
+    <!--$('.data_href_url5').attr('data-href', url5).html(url5.substring(7));-->
+    <!--$('.data_href_url6').attr('data-href', url6).html(url6.substring(7));-->
+
+    <!--$('.href_url_login1').attr('href', url_login1);-->
+    <!--$('.href_url_login2').attr('href', url_login2);-->
+    <!--$('.href_url_login3').attr('href', url_login3);-->
+    <!--$('.href_url_register').attr('href', url_register);-->
+    <!--$('.href_url_hot').attr('href', url1+'/index.php?direct=myhot');-->
+
+<!--</script>-->
+<!--<script src="js/common.js"></script>-->
+
+
+
+
+</body>
+</html>

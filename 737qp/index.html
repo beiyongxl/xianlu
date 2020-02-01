@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no"
+    name="viewport" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#4c516a" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="icon" href="data:image/ico;">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/jquery-confirm.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <script>
+    function isMobile () {return !!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))}
+    if (isMobile() !== false) {
+      if (location.href.indexOf('#') > -1) {
+        // location.href = location.origin + '/m/#/home?' + (location.href.split('#')[1].split('?')[1] || '')
+        location.href = './m/index.html'
+      }else {
+        // location.href = location.origin + '/m/#/home' + location.search
+        location.href = './m/index.html'
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="top">
+      <img src="./images/top.jpg" alt="">
+    </div>
+    <div class="slider">
+      <img src="./images/slider.jpg" alt="">
+      <div id="certify">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slider1.png" /></div>
+            <div class="swiper-slide"><img src="images/slider2.png" /></div>
+            <div class="swiper-slide"><img src="images/slider3.png" /></div>
+            <div class="swiper-slide"><img src="images/slider4.png" /></div>
+            <div class="swiper-slide"><img src="images/slider5.png" /></div>
+            <div class="swiper-slide"><img src="images/slider6.png" /></div>
+            <div class="swiper-slide"><img src="images/slider7.png" /></div>
+            <div class="swiper-slide"><img src="images/slider8.png" /></div>
+            <div class="swiper-slide"><img src="images/slider9.png" /></div>
+            <div class="swiper-slide"><img src="images/slider10.png" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="adv">
+      <img src="./images/adv.jpg" alt="">
+    </div>
+    <div class="download">
+      <div class="list">
+        <dl>
+          <dt>站点一</dt>
+          <dd><cite id="time1">-ms</cite><span>https://<b id="web1"></b></span></dd>
+          <dd class="btns btn1" data-url="https://">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>站点二</dt>
+          <dd><cite id="time2">-ms</cite><span>https://<b id="web2"></b></span></dd>
+          <dd class="btns btn2" data-url="https://">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>站点三</dt>
+          <dd><cite id="time3">-ms</cite><span>https://<b id="web3"></b></span></dd>
+          <dd class="btns btn3" data-url="https://">
+            <button>点击进入</button>
+          </dd>
+        </dl>
+      </div>
+<!--      <img src="./images/download.jpg" alt="">-->
+      <!--<div class="qr_list">
+        <dl>
+          <dt>
+            <img src="./images/qr_android.png" alt="">
+          </dt>
+          <dd>安卓版扫码下载</dd>
+        </dl>
+        <dl>
+          <dt>
+            <img src="./images/qr_ios.png" alt="">
+          </dt>
+          <dd>IOS版扫码下载</dd>
+        </dl>
+      </div>-->
+    </div>
+   <!-- <div class="xr_button">
+      <a href="javascript:showXr()">
+        <img src="./images/xr_button.jpg" alt="">
+      </a>
+    </div>-->
+    <div class="hd">
+      <img src="./images/hd.jpg" alt="">
+    </div>
+    <div class="gallery">
+      <img src="./images/gallery.jpg" alt="">
+      <div class="slider contentBanner">
+			    <div id="slider2">
+			      <div id="certify2">
+			        <div class="swiper-container">
+			          <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="./images/banner1.png" /></div>
+			            <div class="swiper-slide"><img src="./images/banner2.png" /></div>
+			            <div class="swiper-slide"><img src="./images/banner3.png" /></div>
+			            <div class="swiper-slide"><img src="./images/banner4.png" /></div>
+			            <div class="swiper-slide"><img src="./images/banner5.png" /></div>
+			            <div class="swiper-slide"><img src="./images/banner6.png" /></div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+    </div>
+  </div>
+  <div id="xr_window" onclick="hideXr()">
+    <div class="window">
+      <img src="./images/jc_close.jpg" alt="">
+      <img src="./images/jc.jpg" alt="" style="margin-left: 3rem;">
+      <img src="./images/jc_xr.jpg" alt="">
+    </div>
+  </div>
+  <div id="cs"><img src="./images/cs.png" alt="" usemap="#Map">
+    <map name="Map">
+      <area shape="rect" coords="0,3,128,200" href="https://morgen.sodla.com/chat/chatClient/chatbox.jsp?companyID=365044531&configID=207&jid=7861404592&s=1" target="_blank">
+	                                                
+	  
+	  
+<!--      <area shape="rect" coords="3,201,133,248" href="http://wpa.qq.com/msgrd?v=3&uin=506077777" target="_blank">-->
+    </map>
+  </div>
+  <!-- js -->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery-confirm.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js?ver=0.02"></script>
+<script>
+  var arr1 = ['737qp01.com','737qp02.com','737qp03.com'];
+  var arr2 = ['737qp04.com','737qp05.com','737qp06.com'];
+  var arr3 = ['737qp07.com','737qp08.com','737qp09.com'];
+  var web1 = arr1[Math.floor(Math.random()*arr1.length)];
+  var web2 = arr2[Math.floor(Math.random()*arr2.length)];
+  var web3 = arr3[Math.floor(Math.random()*arr3.length)];
+  $('#web1').text(web1)
+  $('#web2').text(web2)
+  $('#web3').text(web3)
+  $('.btn1').attr('data-url','http://' + web1)
+  $('.btn2').attr('data-url','http://' + web2)
+  $('.btn3').attr('data-url','http://' + web3)
+  $('.btns').click(function () {
+    var $this = $(this)
+    window.open($this.attr('data-url'))
+  })
+
+  
+	</script>
+</body>
+
+</html>

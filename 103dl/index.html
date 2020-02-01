@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/swiper.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Welcome</title>
+  <script>
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (/iphone/.test(ua) || /ipad/.test(ua)) { // 判断iOS设备
+      window.location.href = "./m/index.html"
+    } else if (/android/.test(ua)) { // 判断Android 设备
+      window.location.href = "./m/index.html"
+    } else { // 其他设备
+      console.log("您的移动设备暂不支持");
+    }
+  </script>
+  <link rel="stylesheet" href="./css/games_pc_seo.css">
+  <style>
+    .u_android_down, .u_ios_down {
+      width: 176px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      position: absolute;
+      z-index: 1;
+      top: 209px;
+      /*background: url(./img/button.png) no-repeat;*/
+      background:rgba(45,159,255,1);
+      border-radius:18px;
+      display: block;
+    }
+   .u_android_down {
+     left: 27px;
+   }
+    .u_android_down:hover {
+      /*background-position: 0 -73px;*/
+      background:rgba(45,159,255,0.8);
+    }
+    .u_ios_down {
+      left: 237px;
+      /*background-position: 0 -219px;*/
+      background:rgba(253,151,39,1);
+    }
+    .u_ios_down:hover {
+      /*background-position: 0 -292px;*/
+      background:rgba(253,151,39,0.8);}
+  </style>
+</head>
+<body>
+<div class="top_hot">
+<!--  <a id="logo" href="javascript:void (0)" class="logo"></a>-->
+  <div class="top_nav">
+    <div class="w_1920">
+      <a id="logo" href="javascript:void (0)" class="logo"></a>
+    </div>
+  </div>
+  <!--<div class="dow_box">
+    <div class="w_980">
+      <div class="dow">
+        <a class="ph_dow ph_dow1" id="but_wm2_and" href="javascript:void (0)"></a>
+        <a class="ph_dow ph_dow2" target="_blank" id="but_wm2_iph" href="javascript:void (0)"></a>
+        <a class="ph_dow ph_dow3" target="_blank" id="but_wm2_ipad" href="javascript:void (0)"></a>
+        <a class="ph_dow ph_dow4" target="_blank" id="but_wm2_tv" href="javascript:void (0)"></a>
+
+      </div>
+    </div>
+  </div>-->
+  <div class="top_bg">
+    <div class="w_1920">
+      <div class="m_down_box" style="width: 439px;height: 266px; background-image: url(./img/bg_qr.png);background-size: 100% 100%;position: absolute;left: 1082px; top: 382px;">
+        <div class="code" id="code1" style="position: absolute;left: 41px;top: 46px;z-index: 2;padding: 3px;background-color: #fff;"></div>
+        <div class="code" id="code2" style="position: absolute;left: 251px;top: 46px;z-index: 2;padding: 3px;background-color: #fff;"></div>
+        <a href="javascript:void (0)" class="u_android_down">安卓版扫描下载</a>
+        <a href="javascript:void (0)" class="u_ios_down">苹果版扫描下载</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section1">
+  <p>棋牌游戏</p>
+  <div class="items">
+    <div class="item">
+      <img src="./img/1.png" alt="">
+      <p class="title">抢庄牛牛</p>
+      <p class="txt">多种花样，绚丽多彩，奖金丰厚</p>
+    </div>
+    <div class="item">
+      <img src="./img/2.png" alt="">
+      <p class="title">炸金花</p>
+      <p class="txt">赛制丰富，老少皆宜的益智游戏。</p>
+    </div>
+    <div class="item">
+      <img src="./img/3.png" alt="">
+      <p class="title">斗地主</p>
+      <p class="txt">经典和地方玩法的合集，独有竞技模式。</p>
+    </div>
+    <div class="item">
+      <img src="./img/4.png" alt="">
+      <p class="title">21点</p>
+      <p class="txt">支持好友约战、破残局、旁观对战。</p>
+    </div>
+  </div>
+</div>
+<div class="section section2">
+  <p>休闲游戏</p>
+  <div class="items">
+    <div class="item">
+      <img src="./img/5.png" alt="">
+      <p class="title">捕鱼王</p>
+      <p class="txt">经典和千炮玩法，海底世界每日大赛。</p>
+    </div>
+    <div class="item">
+      <img src="./img/6.png" alt="">
+      <p class="title">德州扑克</p>
+      <p class="txt">晋级比赛，完整赛程领取豪礼。</p>
+    </div>
+    <div class="item">
+      <img src="./img/7.png" alt="">
+      <p class="title">三公</p>
+      <p class="txt">经典游戏合集，独有赛季竞技模式。</p>
+    </div>
+    <div class="item">
+      <img src="./img/8.png" alt="">
+      <p class="title">二人麻将</p>
+      <p class="txt">欢乐竞技，画面精致全平台流畅体验。</p>
+    </div>
+  </div>
+</div>
+<p style="text-align: center;color: #00002D;font-size: 24px;">精彩推荐</p>
+<div style="width:1000px; margin: 0 auto">
+  <section class="pc-banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-center none-effect">
+          <a href="#">
+            <img src="img/ddz_lb2.jpg">
+          </a>
+          <div class="layer-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="img/ddz_lb5.jpg">
+          </a>
+          <div class="layer-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="img/ddz_lb4.jpg">
+          </a>
+          <div class="layer-mask"></div>
+        </div>
+      </div>
+      <div class="button">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section></div>
+
+
+<script>
+  var swiper = new Swiper('.swiper-container',{
+
+    autoplay : 3000,
+    speed: 1000,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 2,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    prevButton: '.swiper-button-prev',
+    nextButton: '.swiper-button-next',
+    onInit: function(swiper) {
+      swiper.slides[2].className = "swiper-slide swiper-slide-active";
+    },
+    breakpoints: {
+      668: {
+        slidesPerView: 1,
+      }
+    }
+  });
+</script>
+<!--<script src="./js/games_pc_seo.js"></script>-->
+<script src="./js/jquery.js"></script>
+<script src="./js/qrcode.js"></script>
+<script>
+  function createDownloadQRCode(arr) {
+    let  el=arr.el1;
+    let  url=arr.url1;
+    let  size=arr.size1;
+    console.log(arr,el,url,size)
+    if (Object.prototype.toString.call(el) === '[object HTMLDivElement]') {
+
+    } else if (Object.prototype.toString.call(document.getElementById[el]) === '[object HTMLDivElement]') {
+      el = document.getElementById[el]
+    } else {
+      el = document.querySelector(el)
+      if (Object.prototype.toString.call(el) !== '[object HTMLDivElement]') {
+        console.log(Object.prototype.toString.call(el))
+        console.error('el参数不是DOM对象,也不是可查找的选择器,创建二维码失败!')
+        console.warn('el:', el)
+        return false
+      }
+    }
+
+    // console.log(el.style.height)
+
+    return new QRCode(el, {
+      text: url,
+      width: size,
+      height: size,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    })
+  }
+  var el1=document.getElementById('code1');
+  var el2=document.getElementById('code2');
+  var str = window.location.href;
+  var index = str.lastIndexOf("/");
+  var json1={
+    el1: el1,
+    url1: str.substring(0, index+1) + 'm/index.html',
+    size1: 139
+  }
+  var json2={
+    el1: el2,
+    // url1: window.location.origin + '/m/index.html',
+    url1: str.substring(0, index+1) + 'm/index.html',
+    size1: 139
+  }
+  createDownloadQRCode(json1)
+  createDownloadQRCode(json2)
+
+  /*$('.u_android_down').on('click',function () {
+    $('.code').hide()
+    $('#code1').show()
+  })
+  $('.u_ios_down').on('click',function () {
+    $('.code').hide()
+    $('#code2').show()
+  })*/
+
+</script>
+
+</body>
+
+</html>

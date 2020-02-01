@@ -1,0 +1,232 @@
+*{margin:0;padding:0;}
+.w1000{ width:1000px; margin:0 auto;}
+.clear{ clear:both;}
+a{ text-decoration:none;color:#fff; font-size:12px;}
+body{font-size:12px; font-family: "微软雅黑"; background: #E9E9E9 url(../images/bg01.jpg) no-repeat center top;}
+
+.header {
+	padding: 19px 0 0;
+	margin-bottom:20px;
+	box-sizing: border-box;
+	height: 120px;
+	background: url(../images/h_bg.png) no-repeat center top;
+}
+.header .hInner {
+	margin: 0 auto;
+	width: 1000px;
+}
+.header .hInner h1 {
+	float: left;
+}
+.header .hInner .imgText {
+	float: left;
+	margin-right: 195px;
+}
+.header .hInner .imgText img {
+	display: block;
+}
+.header .hInner .link {
+	margin: 3px 0 0 0;
+	float: right;
+	text-align: center;
+}
+.header .hInner .link p {
+	margin-bottom: 20px;
+	color: #434343;
+}
+.header .hInner .link p a {
+	display: inline-block;
+	margin: 0 12px;
+	color: #e2c358;
+}
+.header .hInner .link p a:hover {
+	color: #f00;
+}
+@keyframes changeColor {
+	0%,100% {
+		color: #f00;
+	}
+	50% {
+		color: #ffff00;
+	}
+}
+.changeColor {
+	animation: changeColor 1s linear infinite;
+}
+#main {
+	margin: 0 auto;
+	width: 1000px;
+	padding: 2px;
+	background-color: #FFF;
+	box-sizing: border-box;
+}
+#main .wrap {
+	border: 3px solid #FFF7E6;
+}
+#main .section {
+	padding: 22px 15px;
+	border: 1px solid #E8D9B1;
+}
+#main .title {
+	margin-bottom: 10px;
+	text-align: center;
+	position: relative;
+}
+#main .note {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	display: inline-block;
+	float: right;
+	background-color: #F5F0E0;
+	color: #b79d51;
+	line-height: 1.7;
+	padding: 0 10px;
+	border-radius: 25px;
+}
+#main .note span {
+	color:#f00;
+}
+#main .gameUl {
+	width: 960px;
+	margin-right: -10px;
+}
+#main li {
+	margin: 10px 10px 0 0;
+	width: 150px;
+	float: left;
+	position: relative;
+}
+#main li .hot {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	transition: all 0.2s;
+}
+#main li .hot.on {
+	top: -8px;
+}
+#main li .tui {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	transition: all 0.2s;
+}
+#main li .tui.on {
+	top: -8px;
+}
+
+#main li.more {
+	height: 40px;
+	width: 150px;
+	border: 1px solid #D5D5D5;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#main li.more2 a {
+	font-size: 12px;
+	color: #b79d51;
+	background-color: #fff;	
+}
+#main li a {
+	display: block;
+	position: relative;
+	color: #333;
+	font-size: 14px;
+	line-height: 39px;
+	border: 1px solid #D5D5D5;
+	background-color: #fff;
+	padding-left: 15px;
+}
+#main .speLi01 a {
+	padding-left: 5px;
+}
+#main .gameUl02 li a {
+	text-align: center;
+	padding-left: 0;
+}
+#main li a:hover {
+	background-color: #F9F3DF;
+	border-color: #D0B768;
+}
+#main li a img {
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#main .gameUl {
+	margin-bottom: 30px;
+}
+.mb0 { margin-bottom: 0 !important;}
+.footer {
+	text-align: center;
+	color: #999999;
+	padding: 40px 0 40px;
+}
+
+
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	.header {
+		background:none #292929;
+		padding: 10px 5px;
+		margin-bottom: 0;
+		height: auto;
+	}
+	.header img {
+		width: 100%;
+	}
+	.header .hInner {
+		width: auto;
+	}
+	.header .hInner .imgText {
+		display: none;
+	}
+	.header .hInner h1 {
+		width: 130px;
+	}
+	.header .hInner .link {
+		float: right;
+	}
+	.header .hInner .link .service img {
+		width: 200px;
+	}
+	.header .hInner .link p {
+		margin-bottom: 10px;
+	}
+	#main {
+		width: auto;
+	}
+	#main .note {
+		position: inherit;
+		display: block;
+		text-align: center;
+		float: none;
+		top: inherit;
+		right: inherit;
+	}
+	#main .gameUl {
+		margin-right: 0;
+		width: auto;
+	}
+	#main li {
+		width: 49% !important;
+		float: left;
+		margin-right: 2% !important;
+	}
+	#main li:nth-child(2n) {
+		margin-right: 0 !important;
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+

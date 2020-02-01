@@ -1,0 +1,381 @@
+﻿/*Iphone 适配*/
+@media only screen and ( device-width: 375px ) and ( device-height: 812px ){
+    .foot{
+        padding-bottom: 34px;
+    }
+    main {
+        padding-bottom: 80px!important;
+    }
+}
+
+
+@charset "utf-8";
+/*reset*/
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Microsoft YaHei", Helvetica Neue, Tahoma, Arial;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+input, button {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+ul, li {
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+/*resetend*/
+
+@font-face {
+    font-family: 'iconfont';  /* project id 689131 */
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+i{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+body, html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
+body{
+    background: url('../img/bg.png') no-repeat top center/100%;color: #fff;padding: 0.75rem;background-color: #f3f5ff;font-size: 14px;position: relative;overflow: auto;
+}
+header {
+    height: 44px;
+    position: relative;
+ }
+header .title {
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px; }
+header .btn_back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: transparent; }
+header .btn_back i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 18px;
+    background: transparent; }
+header .btn_right{
+    position: absolute;
+    float: right;
+    right: 0px;
+    top: 10px;
+    padding: 0 10px;
+    background: transparent;}
+header .btn_setting {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent; }
+header .btn_setting i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    background-color: #f0f206;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+    background: transparent; }
+
+.logo {
+    background: url(../img/logo.png) no-repeat center/100% 100%;
+    width: 197px;
+    height: 60px;
+    margin: 0 auto;
+}
+.foot{
+    position: fixed;bottom: 0;left: 0;right: 0;height: 3.75rem;background: #fff;box-shadow: 0px -2px 4px 0px #e0e1ec;color: #8a85fe;
+}
+.foot i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.foot .footer-item{
+    float: left;text-align: center;margin-top: 8px;width: 25%;
+}
+.foot .footer-item span:first-child{
+    width: 0.95rem;height:0.95rem;display: block;margin: 0 auto;
+}
+.withdraw {
+    border-radius: 10px;
+    background: #fff;
+    color: #979797;
+    padding: 10px;
+    margin-top: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.23);-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.23);
+}
+.check ul li {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: 1px solid #e3e3e3;
+    margin-top: 7px;
+}
+.check .checktype{
+    width: 50px;
+    padding-left: 20px;
+    background: #e7edff;
+    border-radius: 40px 0 0 40px;
+    color: #949494;
+}
+.check .checkInter{
+    width: 80px;
+    border-radius: 0 40px 40px 0;
+    background: #9293fd;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.check .checkTime{
+    flex: 1;
+    text-align: center;
+}
+.tab{
+    display: flex;
+    color: #000;
+}
+.tab>div{
+    flex:1;
+    text-align: center;
+}
+.tab .tab-item{
+    width:37px;
+    height:37px;
+    margin: 0 auto 10px;
+
+}
+.tab div:nth-child(1) .tab-item{
+    background: url("../img/wangyinicon.png") no-repeat center/100% 100%;
+}
+.tab div:nth-child(2) .tab-item{
+    background: url("../img/wangzhiIcon.png") no-repeat center/100% 100%;
+}
+.tab div:nth-child(3) .tab-item{
+    background: url("../img/liulanqiIcon.png") no-repeat center/100% 100%;
+}
+.tab div:nth-child(4) .tab-item{
+    background: url("../img/zixunIcon.png") no-repeat center/100% 100%;
+}
+.tab div:nth-child(5) .tab-item{
+    background: url("../img/shipingicon.png") no-repeat center/100% 100%;
+}
+.tab .on {
+   color:#18b1ff
+}
+.content .contentItem h5{
+    height: 35px;line-height: 35px;background: #fafafa;color: #6b6b6b;padding-left: 19px;border-bottom: 1px solid #eeeeee;
+}
+.content .contentItem ul{
+    overflow: hidden;
+}
+.content .contentItem ul li {
+    float: left;width: 25%;text-align: center;margin-top: 10px;border-bottom: 1px solid #eeeeee; padding-bottom: 5px;
+}
+.content .contentItem ul li .icon{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 8px;
+}
+.content .bank ul li:nth-child(1) .icon{
+    background: url("../img/gsyhIcon.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(2) .icon{
+    background: url("../img/zgyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(3) .icon{
+    background: url("../img/jsyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(4) .icon{
+    background: url("../img/nyyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(5) .icon{
+    background: url("../img/yzyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(6) .icon{
+    background: url("../img/zsyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(7) .icon{
+    background: url("../img/gdyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(8) .icon{
+    background: url("../img/xyyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(9) .icon{
+    background: url("../img/hxyh.png") no-repeat center/100% 100%;
+}
+.content .bank ul li:nth-child(10) .icon{
+    background: url("../img/jtyh.png") no-repeat center/100% 100%;
+}
+
+.content .net ul li:nth-child(1) .icon{
+    background: url("../img/baiduIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(2) .icon{
+    background: url("../img/tengxunIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(3) .icon{
+    background: url("../img/fenghuangIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(4) .icon{
+    background: url("../img/souhuIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(5) .icon{
+    background: url("../img/youkuIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(6) .icon{
+    background: url("../img/wangyiIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(7) .icon{
+    background: url("../img/taobaoIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(8) .icon{
+    background: url("../img/JDIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(9) .icon{
+    background: url("../img/12306Icon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(10) .icon{
+    background: url("../img/xiechengIcon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(11) .icon{
+    background: url("../img/4399Icon.png") no-repeat center/100% 100%;
+}
+.content .net ul li:nth-child(12) .icon{
+    background: url("../img/58Icon.png") no-repeat center/100% 100%;
+}
+
+
+.content .explorer ul li:nth-child(1) .icon{
+    background: url("../img/aoyouIcon.png") no-repeat center/100% 100%;
+}
+.content .explorer ul li:nth-child(2) .icon{
+    background: url("../img/googleIcon.png") no-repeat center/100% 100%;
+}
+.content .explorer ul li:nth-child(3) .icon{
+    background: url("../img/qqIcon.png") no-repeat center/100% 100%;
+}
+.content .explorer ul li:nth-child(4) .icon{
+    background: url("../img/huohuIcon.png") no-repeat center/100% 100%;
+}
+.content .explorer ul li:nth-child(5) .icon{
+    background: url("../img/sougouIcon.png") no-repeat center/100% 100%;
+}
+
+
+.content .news ul li:nth-child(1) .icon{
+    background: url("../img/xinlangIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(2) .icon{
+    background: url("../img/fenghuangIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(3) .icon{
+    background: url("../img/tengxunIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(4) .icon{
+    background: url("../img/souhuIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(5) .icon{
+    background: url("../img/wangyiIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(6) .icon{
+    background: url("../img/baiduIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(7) .icon{
+    background: url("../img/lianheIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(8) .icon{
+    background: url("../img/renminIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(9) .icon{
+    background: url("../img/zhonghuaIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(10) .icon{
+    background: url("../img/CTVVICon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(11) .icon{
+    background: url("../img/xinhuaIcon.png") no-repeat center/100% 100%;
+}
+.content .news ul li:nth-child(12) .icon{
+    background: url("../img/huanqiuIcon.png") no-repeat center/100% 100%;
+}
+
+
+.content .vedio ul li:nth-child(1) .icon{
+    background: url("../img/aiqiyiIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(2) .icon{
+    background: url("../img/youkuIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(3) .icon{
+    background: url("../img/tiantianIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(4) .icon{
+    background: url("../img/leshiIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(5) .icon{
+    background: url("../img/PPTVIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(6) .icon{
+    background: url("../img/PPSIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(7) .icon{
+    background: url("../img/souhushipingIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(8) .icon{
+    background: url("../img/tengxunshipingIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(9) .icon{
+    background: url("../img/tudouIcon.png") no-repeat center/100% 100%;
+}
+.content .vedio ul li:nth-child(10) .icon{
+    background: url("../img/baofengyingyinIcon.png") no-repeat center/100% 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .txt_code {
+        width: 60% !important;
+    }
+    .login .phone_code{
+        width: 55% !important;
+    }
+}

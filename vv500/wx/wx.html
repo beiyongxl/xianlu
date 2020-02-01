@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <title>温馨提示</title>
+    <meta charset="utf8">
+</head>
+<body style="margin:0;height:100%;">
+<img id="img" src="tip.png" style="display:none;width:100%;height:100%;padding:0px 0px;">
+
+<script>
+
+    function F_encode(text, key) {
+        num_out = "";
+        str_in = escape(text);
+        for (i = 0; i < str_in.length; i++) {
+            num_out += str_in.charCodeAt(i) - key;
+        }
+        return num_out;
+    }
+
+    function F_decode(num, key) {
+        text_out = "";
+        for (i = 0; i < num.length; i+=2) {
+            var cha = num.substr(i, 2);
+            text_out += unescape(String.fromCharCode(parseInt(num.substr(i, 2)) + key));
+        }
+        return text_out;
+    }
+
+    function is_mobileQQ() {
+        var ua = navigator.userAgent.toLowerCase();
+
+        if (ua.indexOf('qq') !== -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function is_weixin() {
+
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if (is_weixin()==true || is_mobileQQ()==true){
+        document.getElementById('img').style.display = 'block';
+    }else{
+        window.location.href = 'http://' + F_decode('93932823237221748684', 25);
+    }
+</script>
+</body>
+</html>
